@@ -170,3 +170,32 @@ body{
     color: orangered;
     font-size: 6rem;
 }
+#sevenP .backg{
+    background-color: white;
+    border-radius: 20px;
+    font-size: 1.1rem;
+}
+#sevenP .green{
+    color: rgb(82, 221, 82);
+}
+#sevenP .big{
+    font-size: 3.5rem;
+}
+#sevenP ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+#sevenP  li{
+    padding: 10px 0;
+}
+#sevenP i{
+    color: orangered;
+}
+#sevenP .btn-success{
+    border-radius: 50px;
+    width: 100%;
+    font-size: 1.3rem;
+}
+#sevenP .row hr{
+    width: 50%;
+}
