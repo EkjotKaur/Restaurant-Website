@@ -71,7 +71,7 @@ body{
 .navbar-toggler{
     margin-left: 0;;
 }
-.navToggler{
+ .navToggler{
     background-color: black;
 }
 #secondP{
@@ -95,9 +95,10 @@ body{
     height: 1px;
 }
 #thirdP img{
-    height: 150px;
-    width: 120%;
+    height: 120px;
+    width: 100%;
     align-content: center;
+    image-orientation: flip;
 }
 #thirdP img:hover{
     width: 100%;
@@ -109,11 +110,13 @@ body{
 }
 #fourthP .margin{
     float: right;
-    max-width: 250px;
-    max-height: 350px;
-    width: auto;
-    height: auto;
+    width: 150px;
+    height: 300px;
     margin-right: 20px;
+    position: relative;
+}
+#fourthP .row{
+    position: static;
 }
 .number{
     border: 2px solid white;
@@ -134,7 +137,8 @@ body{
     max-height: 70px;
 }
 #playstore img:nth-child(2){
-    width: 150px;
+    width: 130px;
+    margin-left: 10px;
     max-height: 40px;
 }
 #fifthP ul{
@@ -156,6 +160,9 @@ body{
     background: url(sixthP-background.jpg) no-repeat fixed;
     background-size: cover;
     color: white;
+}
+.opacity{
+    background-color: rgba(0, 0, 0, 0.7);
 }
 #sixthP img{
     width: 70px;
@@ -198,4 +205,51 @@ body{
 }
 #sevenP .row hr{
     width: 50%;
+}
+#eightP .base{
+    background-color:  #f7f7f7;
+}
+.row{
+    margin-right: 0;
+}
+#eightP form label{
+    padding-left: 25%;
+
+}
+#eightP form .form-control{
+    width: 80%;
+}
+#eightP form input , #eightP form select, #eightP form textarea{
+    border: 1px solid black;
+}
+#eightP button i{
+    color: rgb(253, 249, 0);
+    background-color: black;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+#eightP button{
+    font-size: 1.5rem;
+}
+#eightP .container a{
+    color:black;
+}
+#eightP .first a:hover{
+    color:white;
+}
+#eightP .second a:hover{
+    color: rgb(240, 23, 157); 
+}
+#eightP .second a{
+    font-size: 1.5rem;
+}
+#eightP .end{
+    color: white;
+    word-spacing: 4px;
+}
+#eightP .end i{
+    color:red;
+}
+#eightP .end span{
+    color: rgb(240, 23, 157);
 }
