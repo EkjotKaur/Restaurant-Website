@@ -21,13 +21,22 @@ body{
     transition-duration: 10s;
     transition-delay: .2s; */
     word-spacing: 1px;
-    border-bottom: 0px solid #37f0e0;
-    transition: border 4s ease-in;
-}
-#mainNav a:hover{
-    border-bottom-width: 2px;
     
 }
+#mainNav a::after{
+    content: " ";
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-bottom: 2px solid #37f0e0;
+    transition: 0.25s;
+    transform: scaleX(0);
+
+}
+#mainNav a:hover::after{
+    transform: scaleX(1);
+}
+
 #cover .container{
     padding-left: 8%;
     padding-right: 8%;
@@ -71,8 +80,12 @@ body{
 .navbar-toggler{
     margin-left: 0;;
 }
- .navToggler{
+.navToggler{
     background-color: black;
+    width: 100%;
+}
+#collapsed-span, #collapsed-navbar{
+    width: 100%;
 }
 #secondP{
     padding: 50px 40px;
@@ -98,22 +111,34 @@ body{
     height: 120px;
     width: 100%;
     align-content: center;
-    image-orientation: flip;
+    /* image-orientation: flip;
+    box-sizing: border-box;*/
+    /* transform: scaleX(1.3);
+    transition: .25s;
+    box-sizing: border-box; 
+    overflow: hidden;
 }
-#thirdP img:hover{
-    width: 100%;
-}
+ #thirdP img:hover{
+    transform: scaleX(1);
+    width: 100%; */
+} 
 #fourthP{
     background-color: #f7e2b0;
     font-size: 1.1rem;
     width: 100%;
 }
 #fourthP .margin{
-    float: right;
-    width: 150px;
-    height: 300px;
+    width: 200px;
+    height: 400px;
     margin-right: 20px;
-    position: relative;
+}
+.trying{
+    color: white;
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.8rem;
 }
 #fourthP .row{
     position: static;
@@ -252,4 +277,16 @@ body{
 }
 #eightP .end span{
     color: rgb(240, 23, 157);
+}
+
+ body #cover .navbar-scroll{
+    position: fixed!important;
+    background: pink;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 70px;
 }

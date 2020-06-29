@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
     <title>OMANIFOOD</title>
   </head>
   <body>
@@ -20,14 +22,11 @@
             <div class="col-1 col-md-2 d-none d-md-block">
                 <img id="logo" src="LOGO.jpg" alt="">
             </div>
-            <div class="col-11 col-md-10 pr-0">
-                <div class="container">
+            <div class="col-11 col-md-10 pr-0 d-none d-md-flex">
+                <div class="container ">
                     <nav class="navbar navbar-expand-md navbar-dark" id="mainNav">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                          <span class="navbar-toggler-icon"></span>
-                        </button>
                       
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="collapse navbar-collapse">
                           <ul class="navbar-nav m-auto">
                             <li class="nav-item">
                                 <a class="nav-link text-truncate mr-3 mr-lg-5" href="#secondP">FOOD DELIVERY</a>
@@ -45,6 +44,36 @@
                         </div>
                     </nav>
                 </div>
+              </div>
+              <div class="col-12 px-0 d-md-flex d-md-none">
+                <div class="d-block d-md-none " id="collapsed-navbar">
+                  <nav class="navbar navbar-dark pl-4">
+                    <span id="collapsed-span">
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <button id="close" class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+                        <i class="fas fa-times"></i>
+                      </button>
+                    <span>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav m-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-truncate mr-3 mr-lg-5" href="#secondP">FOOD DELIVERY</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link mr-3 mr-lg-5 text-truncate" href="#fourthP">HOW IT WORKS</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link mr-3 mr-lg-5 text-truncate" href="#fifthP">OUR CITIES</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link mr-3 mr-lg-5 text-truncate" href="#" >SIGN IN</a>
+                          </li>
+                        </ul>
+                    </div>
+                </nav>
+              </div>
             </div>
         </div> <!-- row-->
         <div class="mt-5">
@@ -96,7 +125,7 @@
     <section id="thirdP" class="mb-0 pb-0">
       <div class="row">
         <div class="col-3 px-0">
-          <img src="https://images.unsplash.com/photo-1576458088443-04a19bb13da6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+            <img  src="https://images.unsplash.com/photo-1576458088443-04a19bb13da6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
         </div>
         <div class="col-3 px-0">
           <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
@@ -117,7 +146,7 @@
             <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
         </div>
         <div class="col-3 px-0">
-            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
+            <img class="img-fluid" src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="">
         </div>
       </div>
     </section>
@@ -128,33 +157,21 @@
         <hr class="hrline">
       </div>
       <div class="row">
-        <div class="col-5">
+        <div class="col-12 col-md-5  d-flex justify-content-center justify-content-md-end">
           <img class="margin" src="https://omnifoodraj.herokuapp.com/images/iphone.png" alt="">
         </div>
-        <div class="col-7">
+        <div class="col-12 col-md-7">
           <div class="row pr-2 pr-md-5 m-0 py-4 ">
-            <div class="col-2 text-center"><div class="align-middle number p-0 p-sm-1 p-md-2">1</div></div>
-            <div class="col-10">
-              <div class="para">
-                <p>Choose the subscription plan that best suits your needs and sign up today</p>
-              </div>
-            </div>
+            <div class="col-2 text-center"> <div class="trying">1</div> </div>
+            <div class="col-10"><p>Choose the subscription plan that best suits your needs and sign up today<p></div>
           </div>
-          <div class="row m-0 py-4 pr-2 pr-md-5">
-            <div class="col-2 text-center"><div class="align-middle number p-0 p-sm-1 p-md-2">2</div></div>
-            <div class="col-10">
-              <div class="para">
-                <p>Order your delicious meal using our mobile app or website. Or you can even call us!.</p>
-              </div>
-            </div>
+          <div class="row pr-2 pr-md-5 m-0 py-4 ">
+            <div class="col-2 text-center"> <div class="trying">2</div> </div>
+            <div class="col-10"><p>Order your delicious meal using our mobile app or website. Or you can even call us!.<p></div>
           </div>
-          <div class="row pr-2 pr-md-5 m-0 py-4">
-            <div class="col-2 text-center"><div class="align-middle number p-0 p-sm-1 p-md-2">3</div></div>
-            <div class="col-10">
-              <div class="para ml-1">
-                <p>Enjoy your meal after less than 20 minutes. See you next time!.</p>
-              </div>
-            </div>
+          <div class="row pr-2 pr-md-5 m-0 py-4 ">
+            <div class="col-2 text-center"> <div class="trying">3</div> </div>
+            <div class="col-10"><p>Enjoy your meal after less than 20 minutes. See you next time!.<p></div>
           </div>
           <div id="playstore" class="p-5">
             <img src="google-play-badge.png" alt="">
