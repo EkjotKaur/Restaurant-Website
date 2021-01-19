@@ -8,9 +8,11 @@ body{
     background: url(cover-img.jpg) no-repeat fixed;
     background-size: cover;
     color: white;
-    height: 610px;
+    height: 100vh;
     width: 100%;
     margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
 }
 #mainNav a{
     color: white;
@@ -50,12 +52,12 @@ body{
 }
 .coverBtn{
     border-radius: 30px;
-    font-size: 1.8rem;
-    padding: 0px 40px;
+    font-size: 2rem;
+    padding: 7px 40px;
 }
 .coverBtn:hover{
-    font-size: 2rem;
-    padding: 2px 50px;
+    font-size: 2.1rem;
+    padding: 10px 43px;
 }
 .base{
     margin: 30px auto;
@@ -289,4 +291,21 @@ body{
     right: 0;
     z-index: 100;
     height: 70px;
+}
+
+/*  */
+
+.heading{
+    padding-top: 100px;
+}
+.heading h1{
+    font-size: 3.5rem;
+}
+@media only screen and (min-width: 490px){
+    .box-number .col-2{
+        padding: 0;
+    }
+    .box-number{
+        margin-right: 0;
+    }
 }
